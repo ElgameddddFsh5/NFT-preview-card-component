@@ -42,7 +42,7 @@ main section .container .card .main-img {
   max-width: 300px;
 }
 main section .container .card .image:hover:before {
-  content: url(./images/icon-view.svg);
+  content: url(../images/icon-view.svg);
   position: absolute;
   width: 300px;
   height: 300px;
