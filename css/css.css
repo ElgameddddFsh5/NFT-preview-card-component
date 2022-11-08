@@ -1,0 +1,115 @@
+:root {
+  /* ### Primary */
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  /* ### Neutral */
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Outfit";
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--Very-dark-blue-main-BG);
+}
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main section .container .card {
+  width: 340px;
+  border-radius: 15px;
+  padding: 30px 25px;
+  background-color: var(--Very-dark-blue-card-BG);
+}
+main section .container .card .image {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+main section .container .card .main-img {
+  border-radius: 15px;
+  max-width: 300px;
+}
+main section .container .card .image:hover:before {
+  content: url(/images/icon-view.svg);
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section .container .card h1 {
+  font-size: 20px;
+  color: var(--White);
+  margin: 20px 0;
+  cursor: pointer;
+}
+main section .container .card h1:hover,
+main section .creation h6:hover {
+  color: var(--Cyan);
+}
+main section .container .card h2 {
+  font-size: 18px;
+  color: var(--Soft-blue);
+  font-weight: 300;
+}
+main section .container .card .eth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+main section .container .card .eth h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--Cyan);
+  margin: 20px 5px 20px 5px;
+}
+main section .container .card .eth h4 {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--Soft-blue);
+  margin: 20px 5px 20px 5px;
+}
+main section .container .card .et,
+main section .container .card .days {
+  display: flex;
+  align-items: center;
+}
+main section .creation {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
+}
+main section .creation .avatar {
+  width: 35px;
+  border: 1px solid var(--Soft-blue);
+  border-radius: 50%;
+}
+main section .creation h5 {
+  font-weight: 400;
+  color: var(--Soft-blue);
+  margin: 0 5px;
+  font-size: 15px;
+}
+main section .creation h6 {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--White);
+  cursor: pointer;
+}
